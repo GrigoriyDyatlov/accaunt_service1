@@ -11,7 +11,7 @@ import java.util.UUID;
  */
 @Value
 public class UserDto {
-    UUID id;
+    UUID userId;
     @NotBlank
     String fullName;
     String addressDelivery;
