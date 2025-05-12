@@ -1,6 +1,5 @@
 package ru.netologu.accaunt_service;
 
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Value;
@@ -21,7 +20,7 @@ public class UserDto {
     String phoneNumber;
     String email;
 
-    public static UserDto fromEntity (User user){
+    public static UserDto fromEntity(User user) {
         return new UserDto(user.getUserId(),
                 user.getFullName(),
                 user.getAddressDelivery(),
